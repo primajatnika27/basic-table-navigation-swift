@@ -13,6 +13,11 @@
 		A534CC742B09B918000898E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A534CC722B09B918000898E6 /* Main.storyboard */; };
 		A534CC762B09B919000898E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A534CC752B09B919000898E6 /* Assets.xcassets */; };
 		A534CC792B09B919000898E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A534CC772B09B919000898E6 /* LaunchScreen.storyboard */; };
+		A534CC852B09BA4F000898E6 /* WisataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534CC842B09BA4F000898E6 /* WisataModel.swift */; };
+		A534CC882B09BBCC000898E6 /* WisataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534CC862B09BBCC000898E6 /* WisataTableViewCell.swift */; };
+		A534CC892B09BBCC000898E6 /* WisataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A534CC872B09BBCC000898E6 /* WisataTableViewCell.xib */; };
+		A58AB9E22B09CB0A006CE855 /* DetailWisataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58AB9E12B09CB0A006CE855 /* DetailWisataViewController.swift */; };
+		A5A4178E2B09E106004D1517 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4178D2B09E106004D1517 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A534CC752B09B919000898E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A534CC782B09B919000898E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A534CC7A2B09B919000898E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A534CC842B09BA4F000898E6 /* WisataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataModel.swift; sourceTree = "<group>"; };
+		A534CC862B09BBCC000898E6 /* WisataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataTableViewCell.swift; sourceTree = "<group>"; };
+		A534CC872B09BBCC000898E6 /* WisataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WisataTableViewCell.xib; sourceTree = "<group>"; };
+		A58AB9E12B09CB0A006CE855 /* DetailWisataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWisataViewController.swift; sourceTree = "<group>"; };
+		A5A4178D2B09E106004D1517 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		A534CC6B2B09B918000898E6 /* WisataBandung */ = {
 			isa = PBXGroup;
 			children = (
+				A58AB9DE2B09CAD6006CE855 /* screen */,
+				A534CC832B09BA3B000898E6 /* model */,
+				A534CC802B09B9E2000898E6 /* cell */,
 				A534CC6C2B09B918000898E6 /* AppDelegate.swift */,
 				A534CC6E2B09B918000898E6 /* SceneDelegate.swift */,
 				A534CC702B09B918000898E6 /* ViewController.swift */,
@@ -65,6 +78,32 @@
 				A534CC7A2B09B919000898E6 /* Info.plist */,
 			);
 			path = WisataBandung;
+			sourceTree = "<group>";
+		};
+		A534CC802B09B9E2000898E6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A534CC862B09BBCC000898E6 /* WisataTableViewCell.swift */,
+				A534CC872B09BBCC000898E6 /* WisataTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A534CC832B09BA3B000898E6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A534CC842B09BA4F000898E6 /* WisataModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A58AB9DE2B09CAD6006CE855 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				A58AB9E12B09CB0A006CE855 /* DetailWisataViewController.swift */,
+				A5A4178D2B09E106004D1517 /* ProfileViewController.swift */,
+			);
+			path = screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A534CC892B09BBCC000898E6 /* WisataTableViewCell.xib in Resources */,
 				A534CC792B09B919000898E6 /* LaunchScreen.storyboard in Resources */,
 				A534CC762B09B919000898E6 /* Assets.xcassets in Resources */,
 				A534CC742B09B918000898E6 /* Main.storyboard in Resources */,
@@ -138,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A534CC882B09BBCC000898E6 /* WisataTableViewCell.swift in Sources */,
 				A534CC712B09B918000898E6 /* ViewController.swift in Sources */,
 				A534CC6D2B09B918000898E6 /* AppDelegate.swift in Sources */,
+				A534CC852B09BA4F000898E6 /* WisataModel.swift in Sources */,
+				A5A4178E2B09E106004D1517 /* ProfileViewController.swift in Sources */,
+				A58AB9E22B09CB0A006CE855 /* DetailWisataViewController.swift in Sources */,
 				A534CC6F2B09B918000898E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
